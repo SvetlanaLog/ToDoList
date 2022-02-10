@@ -11,10 +11,29 @@
         *, *::before, *::after {
       box-sizing: border-box;
     }
-    
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
     </style>
 </head>
 <body>
- 
+ <div class="todo">
+ <div class="todo_input">
+ <input class="todo_text" type="text">
+ <span class="todo_add"></span>
+ </div>
+ <select class="todo_options">
+   <option value="active">активные</option>
+   <option value="completed">завершенные</option>
+   <option value="deleted">удаленные</option>
+ </select>
 </body>
 </html>
